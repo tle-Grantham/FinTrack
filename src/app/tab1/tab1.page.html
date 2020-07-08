@@ -18,7 +18,7 @@
       Balance
     </ion-card-header>
     <ion-card-content>
-      <h1><strong>${{balance}}</strong></h1>
+      <ion-item *ngFor="let balance of balance"><ion-label><h1><strong>${{balance.balance}}</strong></h1></ion-label></ion-item>
     </ion-card-content>
   </ion-card>
     <ion-list>
